@@ -101,7 +101,7 @@ class Core
     public function getProjectDir(): string
     {
         $r = new \ReflectionObject($this);
-        $dir = dirname($r->getFileName());
+        $dir = dirname($r->getFileName(), 4);
         while (!file_exists($dir . '/composer.json')) {
             $dir = dirname($dir);
         }
