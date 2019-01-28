@@ -1,0 +1,30 @@
+{
+  "name": "libellule/libellule",
+  "type": "library",
+  "description": "Framework d'Apprentissage de POO en PHP.",
+  "keywords": ["framework"],
+  "homepage": "https://biyn.media",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Hugo LIEGEARD",
+      "email": "hugo@biyn.media"
+    }
+  ],
+  "minimum-stability": "stable",
+  "autoload": {
+    "psr-4": {
+      "Libellule\\": "src/"
+    }
+  },
+  "require": {
+    "php": "^7.2",
+    "symfony/http-foundation": "^4.2",
+    "altorouter/altorouter": "^1.2",
+    "twig/twig": "^2.0",
+    "tightenco/collect": "^5.7"
+  },
+  "require-dev": {
+    "symfony/var-dumper": "^4.2"
+  }
+}
